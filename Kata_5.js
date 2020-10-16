@@ -2,7 +2,9 @@ const sample = [{ name: "Bart" }, { name: "Lisa" }, { name: "Maggie" }];
 const sampleTwo = [{ name: "Bart" }, { name: "Lisa" }];
 
 function list(names) {
-  const namesArr = names.map((el) => el.name);
+  let namesArr = names.map((el) => el.name);
+  namesArr.splice(names.length - 1, 0, "&");
+  return namesArr;
 
   // .join(" ");
 }
