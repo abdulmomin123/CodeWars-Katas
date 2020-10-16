@@ -17,7 +17,7 @@ function findNb(m) {
 
       if (result === m) {
         clearInterval(timer);
-        return;
+        return guess;
       } else if (result > m) {
         return;
       } else {
