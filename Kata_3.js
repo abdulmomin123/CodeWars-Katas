@@ -1,10 +1,15 @@
-const sample = 1071225; // 45
+const sample = 40539911473216; // 45
 const sampleTwo = 91716553919377; // -1
-let guess = 45;
+let guess = 1;
 
 function findNb(m) {
-  let n = guess;
-  const sum = (n ** 2 * (n + 1) ** 2) / 4;
-  console.log(sum);
+  if ((guess ** 2 * (guess + 1) ** 2) / 4 === m) {
+    return guess;
+  } else if ((guess ** 2 * (guess + 1) ** 2) / 4 < m) {
+    guess++;
+    findNb(m);
+  } else if ((guess ** 2 * (guess + 1) ** 2) / 4 > m) {
+    return -1;
+  }
 }
 findNb(sample);
