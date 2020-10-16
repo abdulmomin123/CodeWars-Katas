@@ -7,9 +7,8 @@ function list(names) {
 
   let namesArr = names.map((el) => el.name);
   namesArr.splice(names.length - 1, 0, "&");
+  namesArr = namesArr.join(" ");
   return namesArr;
-
-  // .join(" ");
 }
 const result = list(sample);
 
