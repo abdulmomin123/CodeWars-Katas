@@ -1,2 +1,4 @@
-let arr = [];
-let guess = 45;
+function findNb(m) {
+  // your code
+  return -1;
+}
