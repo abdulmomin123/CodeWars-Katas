@@ -4,3 +4,4 @@ const sampleTwo = 91716553919377; // -1
 function findNb(m) {
   //
 }
+findNb(sample);
