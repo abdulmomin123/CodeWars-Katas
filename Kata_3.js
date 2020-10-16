@@ -1,4 +1,4 @@
-const sample = 135440716410000; // 45
+const sample = 1071225; // 45
 const sampleTwo = 91716553919377; // -1
 let guess = 1;
 let curGuess = guess;
@@ -17,6 +17,8 @@ function findNb(m) {
 
       if (result === m) {
         clearInterval(timer);
+        return;
+      } else if (result > m) {
         return;
       } else {
         arr = [];
