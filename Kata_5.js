@@ -9,7 +9,9 @@ function list(names) {
   namesArr = namesArr.join(", ");
   // namesArr.splice(names.length - 1, 0, "&");
   namesArr = [...namesArr];
-  namesArr.splice(namesArr.lastIndexOf(" "), 0, "& ");
+  namesArr.splice(namesArr.lastIndexOf(" "), 0, " &");
+  namesArr.splice(namesArr.lastIndexOf(","), 1, "");
+  namesArr = namesArr.join("");
   return namesArr;
 }
 const result = list(sample);
