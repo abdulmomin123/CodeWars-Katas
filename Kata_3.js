@@ -12,8 +12,13 @@ function findNb(m) {
       guess++;
       curGuess = guess;
       iterations = guess;
-      clearInterval(timer);
-      return;
+
+      const result = arr.reduce((cur, acc) => cur + acc);
+
+      if (result === m) {
+        clearInterval(timer);
+        return;
+      }
     }
 
     arr.push(iterations ** 3);
