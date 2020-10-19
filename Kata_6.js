@@ -13,7 +13,6 @@ function tickets(peopleInLine) {
 
       if (totalMoney >= change) {
         avMoney = [money];
-        return "YES";
       } else {
         return "NO";
       }
