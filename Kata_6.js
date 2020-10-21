@@ -30,9 +30,10 @@
 // console.log(result);
 
 class Student {
-  constructor(name, roll) {
+  constructor(name, roll, stat) {
     this.name = name;
     this.roll = roll;
+    stat ? (this.stat = stat) : null;
   }
 
   getRoll() {
@@ -40,4 +41,13 @@ class Student {
   }
 }
 
+class GoodStudent extends Student {
+  getStat() {
+    console.log(this.stat);
+  }
+}
+
 const std1 = new Student("Asif", 1);
+const std2 = new GoodStudent("Ranjon", 2, "Good");
+
+std2.getStat();
