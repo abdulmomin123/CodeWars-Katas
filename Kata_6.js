@@ -28,18 +28,3 @@
 // const result = tickets(ticket1);
 
 // console.log(result);
-
-class Human {
-  constructor(age, color) {
-    this.age = age;
-    this.color = color;
-  }
-
-  getAge() {
-    console.log(this.age);
-  }
-}
-
-const momin = new Human(18, "white");
-
-console.log(momin);
