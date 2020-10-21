@@ -28,3 +28,8 @@
 // const result = tickets(ticket1);
 
 // console.log(result);
+
+function Human(age, color) {
+  this.age = age;
+  this.color = color;
+}
