@@ -29,7 +29,8 @@
 
 // console.log(result);
 
-function Human(age, color) {
-  this.age = age;
-  this.color = color;
+function nothingSpecial() {
+  console.log(this);
 }
+
+let a = new nothingSpecial();
