@@ -29,13 +29,17 @@
 
 // console.log(result);
 
-class Human {
-  constructor(age, color) {
-    this.age = age;
-    this.color = color;
-  }
-}
+let obj = Object.create(null, {
+  a: {
+    value: "a",
+    writable: true,
+  },
+  b: {
+    value: "b",
+    writable: true,
+  },
+});
 
-let momin = new Human(18, "white");
-
-console.log(Human.prototype);
+let obj2 = Object.create(obj);
+obj2.c = "c";
+obj2.d = "d";
