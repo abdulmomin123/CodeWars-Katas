@@ -34,8 +34,8 @@ class Human {
     this.age = age;
     this.color = color;
   }
-
-  getAge() {
-    console.log(this.age);
-  }
 }
+
+let momin = new Human(18, "white");
+
+console.log(Human.prototype);
