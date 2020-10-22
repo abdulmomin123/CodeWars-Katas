@@ -111,8 +111,6 @@ let Task = {
 };
 
 let Code = {
-  time: 60,
-  project: "Islam",
   setTime: function (time) {
     this.time = time;
   },
@@ -134,8 +132,6 @@ let ReadBooks = {
   setPage: function (page) {
     this.page = page;
   },
-  bookName: `You Don't know JS`,
-  page: 130,
   getBookName: function () {
     console.log(this.bookName);
   },
