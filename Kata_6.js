@@ -141,3 +141,13 @@ let ReadBooks = {
 };
 
 [Code.__proto__, ReadBooks.__proto__] = [Task, Task];
+
+Code.setName("Coding");
+Code.setType("Coding");
+Code.setTime(60);
+Code.setProject("Islam");
+
+Code.getType();
+Code.getName();
+Code.getTime();
+Code.getProject();
