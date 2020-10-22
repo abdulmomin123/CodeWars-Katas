@@ -29,17 +29,24 @@
 
 // console.log(result);
 
-let obj = Object.create(null, {
-  a: {
-    value: "a",
+let Human = Object.create(null, {
+  getAge: {
+    value: function () {
+      console.log(this.age);
+    },
     writable: true,
   },
-  b: {
-    value: "b",
+  getColor: {
+    value: function () {
+      console.log(this.color);
+    },
     writable: true,
+  },
+  getName: {
+    value: function () {
+      console.log(this.name);
+    },
   },
 });
 
-let obj2 = Object.create(obj);
-obj2.c = "c";
-obj2.d = "d";
+let momin = Object.create(Human, {});
