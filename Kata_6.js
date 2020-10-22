@@ -151,3 +151,11 @@
 // Code.getName();
 // Code.getTime();
 // Code.getProject();
+
+const Vehicle = {
+  getType() {
+    console.log(this);
+  },
+};
+
+Vehicle.getType();
