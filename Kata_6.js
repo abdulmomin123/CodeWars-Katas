@@ -160,7 +160,9 @@
 
 // Vehicle.getType();
 
-var AuthController = {
+const LoginController = {};
+
+const AuthController = {
   errors: [],
   checkAuth() {
     // ...
