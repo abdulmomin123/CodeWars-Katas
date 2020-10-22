@@ -74,23 +74,23 @@ Human.getAge = function () {
 // just a reference not a copy!
 momin.getAge();
 
-// let anotherObject = {
-//   a: 2,
-// };
+let anotherObject = {
+  a: 2,
+};
 
-// function Vehicle(engines, seats) {
-//   this.engines = engines;
-//   this.seats = seats;
+function Vehicle(engines, seats) {
+  this.engines = engines;
+  this.seats = seats;
 
-//   Vehicle.prototype.getEngines = function () {
-//     console.log(this.engines);
-//   };
-//   Vehicle.prototype.getSeats = function () {
-//     console.log(this.seats);
-//   };
-// }
+  Vehicle.prototype.getEngines = function () {
+    console.log(this.engines);
+  };
+  Vehicle.prototype.getSeats = function () {
+    console.log(this.seats);
+  };
+}
 
-// const vh1 = new Vehicle(1, 4);
-// vh1.getSeats();
+const vh1 = new Vehicle(1, 4);
+vh1.getSeats();
 
-// console.log(vh1);
+console.log(vh1);
