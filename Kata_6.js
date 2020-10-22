@@ -174,14 +174,14 @@ const LoginController = {};
 // }; // NOW, link `AuthController` to delegate to `LoginController`
 // Object.setPrototypeOf(AuthController, LoginController);
 
-var Foo = {
-  bar: function () {
-    console.log(this);
-  },
-  baz: function baz() {
-    console.log(this);
-  },
-};
+// var Foo = {
+//   bar: function () {
+//     console.log(this);
+//   },
+//   baz: function baz() {
+//     console.log(this);
+//   },
+// };
 
-Foo.bar();
-Foo.baz();
+// Foo.bar();
+// Foo.baz();
