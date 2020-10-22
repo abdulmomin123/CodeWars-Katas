@@ -96,8 +96,6 @@
 // console.log(vh1);
 
 let Task = {
-  type: "Easy",
-  name: "Coding",
   getType: function () {
     console.log(this.type);
   },
@@ -107,6 +105,8 @@ let Task = {
 };
 
 let Code = {
+  type: "Easy",
+  name: "Coding",
   time: 60,
   project: "Islam",
   getTime: function () {
@@ -118,10 +118,12 @@ let Code = {
 };
 
 let ReadBooks = {
-  name: `You Don't know JS`,
+  type: "Easy",
+  name: "Reading",
+  bookName: `You Don't know JS`,
   page: 130,
   getBookName: function () {
-    console.log(this.name);
+    console.log(this.bookName);
   },
   getCurrentPage: function () {
     console.log(this.page);
