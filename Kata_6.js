@@ -112,3 +112,12 @@ let Code = {
     console.log(this.project);
   },
 };
+
+let ReadBooks = {
+  getBookName: function () {
+    console.log(this.name);
+  },
+  getCurrentPage: function () {
+    console.log(this.page);
+  },
+};
