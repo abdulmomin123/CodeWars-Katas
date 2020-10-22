@@ -152,10 +152,22 @@
 // Code.getTime();
 // Code.getProject();
 
-const Vehicle = {
-  getType() {
-    console.log(this);
-  },
-};
+// const Vehicle = {
+//   getType() {
+//     console.log(this);
+//   },
+// };
 
-Vehicle.getType();
+// Vehicle.getType();
+
+var AuthController = {
+  errors: [],
+  checkAuth() {
+    // ...
+  },
+  server(url, data) {
+    // ...
+  },
+  // ...
+}; // NOW, link `AuthController` to delegate to `LoginController`
+Object.setPrototypeOf(AuthController, LoginController);
