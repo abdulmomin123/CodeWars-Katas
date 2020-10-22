@@ -67,3 +67,20 @@ let momin = Object.create(Human, {
 let anotherObject = {
   a: 2,
 };
+
+function Vehicle(engines, seats) {
+  this.engines = engines;
+  this.seats = seats;
+
+  Vehicle.prototype.getEngines = function () {
+    console.log(this.engines);
+  };
+  Vehicle.prototype.getSeats = function () {
+    console.log(this.seats);
+  };
+}
+
+const vh1 = new Vehicle(1, 4);
+vh1.getSeats();
+
+console.log(vh1);
