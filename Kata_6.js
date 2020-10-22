@@ -96,6 +96,12 @@
 // console.log(vh1);
 
 let Task = {
+  setType: function (type) {
+    this.type = type;
+  },
+  setName: function (name) {
+    this.name = name;
+  },
   getType: function () {
     console.log(this.type);
   },
@@ -105,10 +111,14 @@ let Task = {
 };
 
 let Code = {
-  type: "Easy",
-  name: "Coding",
   time: 60,
   project: "Islam",
+  setTime: function (time) {
+    this.time = time;
+  },
+  setProject: function (project) {
+    this.project = project;
+  },
   getTime: function () {
     console.log(this.time);
   },
@@ -118,8 +128,12 @@ let Code = {
 };
 
 let ReadBooks = {
-  type: "Easy",
-  name: "Reading",
+  setBookName: function (bookName) {
+    this.bookName = bookName;
+  },
+  setPage: function (page) {
+    this.page = page;
+  },
   bookName: `You Don't know JS`,
   page: 130,
   getBookName: function () {
