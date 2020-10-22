@@ -49,4 +49,17 @@ let Human = Object.create(null, {
   },
 });
 
-let momin = Object.create(Human, {});
+let momin = Object.create(Human, {
+  name: {
+    value: "Momin",
+    writable: true,
+  },
+  age: {
+    value: 18,
+    writable: true,
+  },
+  color: {
+    value: "white",
+    writable: true,
+  },
+});
