@@ -63,3 +63,7 @@ let momin = Object.create(Human, {
     writable: true,
   },
 });
+
+let anotherObject = {
+  a: 2,
+};
