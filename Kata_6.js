@@ -162,14 +162,26 @@
 
 const LoginController = {};
 
-const AuthController = {
-  errors: [],
-  checkAuth() {
-    // ...
-  },
-  server(url, data) {
-    // ...
-  },
-  // ...
-}; // NOW, link `AuthController` to delegate to `LoginController`
-Object.setPrototypeOf(AuthController, LoginController);
+// const AuthController = {
+//   errors: [],
+//   checkAuth() {
+//     // ...
+//   },
+//   server(url, data) {
+//     // ...
+//   },
+//   // ...
+// }; // NOW, link `AuthController` to delegate to `LoginController`
+// Object.setPrototypeOf(AuthController, LoginController);
+
+// var Foo = {
+//   bar: function () {
+//     console.log(this);
+//   },
+//   baz: function baz() {
+//     console.log(this);
+//   },
+// };
+
+// Foo.bar();
+// Foo.baz();
