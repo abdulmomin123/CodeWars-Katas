@@ -95,59 +95,59 @@
 
 // console.log(vh1);
 
-let Task = {
-  setType: function (type) {
-    this.type = type;
-  },
-  setName: function (name) {
-    this.name = name;
-  },
-  getType: function () {
-    console.log(this.type);
-  },
-  getName: function () {
-    console.log(this.name);
-  },
-};
+// let Task = {
+//   setType: function (type) {
+//     this.type = type;
+//   },
+//   setName: function (name) {
+//     this.name = name;
+//   },
+//   getType: function () {
+//     console.log(this.type);
+//   },
+//   getName: function () {
+//     console.log(this.name);
+//   },
+// };
 
-let Code = {
-  setTime: function (time) {
-    this.time = time;
-  },
-  setProject: function (project) {
-    this.project = project;
-  },
-  getTime: function () {
-    console.log(this.time);
-  },
-  getProject: function () {
-    console.log(this.project);
-  },
-};
+// let Code = {
+//   setTime: function (time) {
+//     this.time = time;
+//   },
+//   setProject: function (project) {
+//     this.project = project;
+//   },
+//   getTime: function () {
+//     console.log(this.time);
+//   },
+//   getProject: function () {
+//     console.log(this.project);
+//   },
+// };
 
-let ReadBooks = {
-  setBookName: function (bookName) {
-    this.bookName = bookName;
-  },
-  setPage: function (page) {
-    this.page = page;
-  },
-  getBookName: function () {
-    console.log(this.bookName);
-  },
-  getCurrentPage: function () {
-    console.log(this.page);
-  },
-};
+// let ReadBooks = {
+//   setBookName: function (bookName) {
+//     this.bookName = bookName;
+//   },
+//   setPage: function (page) {
+//     this.page = page;
+//   },
+//   getBookName: function () {
+//     console.log(this.bookName);
+//   },
+//   getCurrentPage: function () {
+//     console.log(this.page);
+//   },
+// };
 
-[Code.__proto__, ReadBooks.__proto__] = [Task, Task];
+// [Code.__proto__, ReadBooks.__proto__] = [Task, Task];
 
-Code.setName("Coding");
-Code.setType("Coding");
-Code.setTime(60);
-Code.setProject("Islam");
+// Code.setName("Coding");
+// Code.setType("Coding");
+// Code.setTime(60);
+// Code.setProject("Islam");
 
-Code.getType();
-Code.getName();
-Code.getTime();
-Code.getProject();
+// Code.getType();
+// Code.getName();
+// Code.getTime();
+// Code.getProject();
