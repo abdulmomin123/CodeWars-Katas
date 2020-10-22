@@ -64,23 +64,33 @@ let momin = Object.create(Human, {
   },
 });
 
-let anotherObject = {
-  a: 2,
+momin.getAge();
+
+// changing the function
+Human.getAge = function () {
+  console.log(this.age + 2);
 };
 
-function Vehicle(engines, seats) {
-  this.engines = engines;
-  this.seats = seats;
+// just a reference not a copy!
+momin.getAge();
 
-  Vehicle.prototype.getEngines = function () {
-    console.log(this.engines);
-  };
-  Vehicle.prototype.getSeats = function () {
-    console.log(this.seats);
-  };
-}
+// let anotherObject = {
+//   a: 2,
+// };
 
-const vh1 = new Vehicle(1, 4);
-vh1.getSeats();
+// function Vehicle(engines, seats) {
+//   this.engines = engines;
+//   this.seats = seats;
 
-console.log(vh1);
+//   Vehicle.prototype.getEngines = function () {
+//     console.log(this.engines);
+//   };
+//   Vehicle.prototype.getSeats = function () {
+//     console.log(this.seats);
+//   };
+// }
+
+// const vh1 = new Vehicle(1, 4);
+// vh1.getSeats();
+
+// console.log(vh1);
