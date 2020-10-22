@@ -129,3 +129,5 @@ let ReadBooks = {
     console.log(this.page);
   },
 };
+
+[Code.__proto__, ReadBooks.__proto__] = [Task, Task];
