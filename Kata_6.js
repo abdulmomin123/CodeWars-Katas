@@ -103,3 +103,12 @@ let Task = {
     console.log(this.name);
   },
 };
+
+let Code = {
+  getTime: function () {
+    console.log(this.time);
+  },
+  getProject: function () {
+    console.log(this.project);
+  },
+};
