@@ -29,68 +29,77 @@
 
 // console.log(result);
 
-let Human = Object.create(null, {
-  getAge: {
-    value: function () {
-      console.log(this.age);
-    },
-    writable: true,
-  },
-  getColor: {
-    value: function () {
-      console.log(this.color);
-    },
-    writable: true,
-  },
-  getName: {
-    value: function () {
-      console.log(this.name);
-    },
-  },
-});
+// let Human = Object.create(null, {
+//   getAge: {
+//     value: function () {
+//       console.log(this.age);
+//     },
+//     writable: true,
+//   },
+//   getColor: {
+//     value: function () {
+//       console.log(this.color);
+//     },
+//     writable: true,
+//   },
+//   getName: {
+//     value: function () {
+//       console.log(this.name);
+//     },
+//   },
+// });
 
-let momin = Object.create(Human, {
-  name: {
-    value: "Momin",
-    writable: true,
-  },
-  age: {
-    value: 18,
-    writable: true,
-  },
-  color: {
-    value: "white",
-    writable: true,
-  },
-});
+// let momin = Object.create(Human, {
+//   name: {
+//     value: "Momin",
+//     writable: true,
+//   },
+//   age: {
+//     value: 18,
+//     writable: true,
+//   },
+//   color: {
+//     value: "white",
+//     writable: true,
+//   },
+// });
 
-momin.getAge();
+// momin.getAge();
 
-// changing the function
-Human.getAge = function () {
-  console.log(this.age + 2);
+// // changing the function
+// Human.getAge = function () {
+//   console.log(this.age + 2);
+// };
+
+// // just a reference not a copy!
+// momin.getAge();
+
+// let anotherObject = {
+//   a: 2,
+// };
+
+// function Vehicle(engines, seats) {
+//   this.engines = engines;
+//   this.seats = seats;
+
+//   Vehicle.prototype.getEngines = function () {
+//     console.log(this.engines);
+//   };
+//   Vehicle.prototype.getSeats = function () {
+//     console.log(this.seats);
+//   };
+// }
+
+// const vh1 = new Vehicle(1, 4);
+// vh1.getSeats();
+
+// console.log(vh1);
+
+let Task = {
+  getType: function () {
+    console.log(this.type);
+  },
+  getName: function () {
+    console.log(this.name);
+  },
 };
-
-// just a reference not a copy!
-momin.getAge();
-
-let anotherObject = {
-  a: 2,
-};
-
-function Vehicle(engines, seats) {
-  this.engines = engines;
-  this.seats = seats;
-
-  Vehicle.prototype.getEngines = function () {
-    console.log(this.engines);
-  };
-  Vehicle.prototype.getSeats = function () {
-    console.log(this.seats);
-  };
-}
-
-const vh1 = new Vehicle(1, 4);
-vh1.getSeats();
-
-console.log(vh1);
