@@ -160,7 +160,7 @@
 
 // Vehicle.getType();
 
-const LoginController = {};
+// const LoginController = {};
 
 // const AuthController = {
 //   errors: [],
