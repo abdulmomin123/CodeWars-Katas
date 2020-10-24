@@ -17,7 +17,6 @@ function solution(str) {
     newArr[newArr.length - 1] = newArr[newArr.length - 1] + '_';
     return newArr;
   }
-  console.log([...newArr[newArr.length - 1]].length);
 }
 
 const result = solution(sampleOne);
