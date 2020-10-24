@@ -5,12 +5,19 @@ Complete the solution so that it splits the string into pairs of two
   an underscore ('_').
 */
 
-const [sampleOne, sampleTwo] = ['abcd', 'abcd'];
+const [sampleOne, sampleTwo] = ['abc', 'abcd'];
 
 function solution(str) {
-  const newArr = str.split(/^(..)/gi);
+  let newArr = str.split(/(..)/gi);
+  newArr = newArr.filter(el => el !== '');
 
-  return newArr;
+  if ([...newArr[newArr.length - 1]].length > 1) {
+    return newArr;
+  } else {
+    newArr[newArr.length - 1] = newArr[newArr.length - 1] + '_';
+    return newArr;
+  }
+  console.log([...newArr[newArr.length - 1]].length);
 }
 
 const result = solution(sampleOne);
