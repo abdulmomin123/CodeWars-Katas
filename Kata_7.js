@@ -4,7 +4,7 @@ const [sampleOne, sampleTwo] = [
 ];
 
 const moveZeros = function (arr) {
-  // TODO: Program me
+  const indexOfZero = [];
 };
 
 const result = moveZeros(sampleOne);
