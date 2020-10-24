@@ -8,7 +8,14 @@ const [sampleOne, sampleTwo] = [
 // };
 
 const moveZeros = function (arr) {
-  return arr.sort(a => (a === 0 ? 1 : -1)).sort(a => (a === 0 ? 1 : -1));
+  const indexOfZeros = [];
+
+  const newArr = arr.filter((el, i) => {
+    el === 0 ? indexOfZeros.push(i) : null;
+    return el !== 0;
+  });
+
+  return newArr;
 };
 
 const result = moveZeros(sampleOne);
