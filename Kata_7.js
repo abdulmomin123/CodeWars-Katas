@@ -4,14 +4,9 @@ const [sampleOne, sampleTwo] = [
 ];
 
 const moveZeros = function (arr) {
-  const indexOfZero = [];
-
-  const newArr = arr.filter((el, i, src) => {
-    el === 0 ? indexOfZero.push(i) : null;
-
-    if (el !== 0) return el;
-  });
-
+  const newArr = arr
+    .sort(a => (a === 0 ? 1 : -1))
+    .sort(a => (a === 0 ? 1 : -1));
   return newArr;
 };
 
