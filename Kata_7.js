@@ -8,9 +8,11 @@ const moveZeros = function (arr) {
 
   const newArr = arr.filter((el, i, src) => {
     el === 0 ? indexOfZero.push(i) : null;
+
+    if (el !== 0) return el;
   });
 
-  return indexOfZero;
+  return newArr;
 };
 
 const result = moveZeros(sampleOne);
