@@ -13,6 +13,8 @@ function solution(str) {
 
   let newArr = str.split(/(..)/gi);
   newArr = newArr.filter(el => el !== '');
+
+  return newArr;
 }
 
 const result = solution(sampleOne);
