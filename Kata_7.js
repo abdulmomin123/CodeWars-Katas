@@ -6,12 +6,8 @@ const [sampleOne, sampleTwo] = [
 const moveZeros = function (arr) {
   const indexOfZero = [];
 
-  arr.forEach((el, i) => {
-    if (el === 0) indexOfZero.push(i);
-  });
-
-  indexOfZero.forEach((el, i) => {
-    //
+  const newArr = arr.filter((el, i, src) => {
+    el === 0 ? indexOfZero.push(i) : null;
   });
 
   return indexOfZero;
