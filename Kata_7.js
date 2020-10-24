@@ -11,9 +11,11 @@ const moveZeros = function (arr) {
   const indexOfZeros = [];
 
   const newArr = arr.filter((el, i) => {
-    el === 0 ? indexOfZeros.push(i) : null;
+    el === 0 ? indexOfZeros.push(0) : null;
     return el !== 0;
   });
+
+  indexOfZeros.forEach(el => newArr.push(el));
 
   return newArr;
 };
