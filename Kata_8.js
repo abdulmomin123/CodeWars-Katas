@@ -10,10 +10,8 @@ const [sampleOne, sampleTwo] = ['abc', 'abcd'];
 function solution(str) {
   if (str === '') return [];
   if (str.length % 2 !== 0) str = `${str}_`;
-
   let newArr = str.split(/(..)/gi);
   newArr = newArr.filter(el => el !== '');
-
   return newArr;
 }
 
