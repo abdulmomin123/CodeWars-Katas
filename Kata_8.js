@@ -8,10 +8,7 @@ Complete the solution so that it splits the string into pairs of two
 const [sampleOne, sampleTwo] = ['abcd', 'abcd'];
 
 function solution(str) {
-  const newArr = [];
-  [...str].forEach(el => {
-    newArr.push(el);
-  });
+  const newArr = str.split(/([a-z])/gi);
 
   return newArr;
 }
