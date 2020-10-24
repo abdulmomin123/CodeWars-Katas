@@ -10,6 +10,10 @@ const moveZeros = function (arr) {
     if (el === 0) indexOfZero.push(i);
   });
 
+  indexOfZero.forEach((el, i) => {
+    //
+  });
+
   return indexOfZero;
 };
 
