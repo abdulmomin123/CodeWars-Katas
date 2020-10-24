@@ -10,3 +10,7 @@ const [sampleOne, sampleTwo] = ['abc', 'abcd'];
 function solution(str) {
   //
 }
+
+const result = solution(sampleOne);
+
+console.log(result);
