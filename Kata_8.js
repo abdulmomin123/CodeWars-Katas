@@ -5,10 +5,15 @@ Complete the solution so that it splits the string into pairs of two
   an underscore ('_').
 */
 
-const [sampleOne, sampleTwo] = ['abc', 'abcd'];
+const [sampleOne, sampleTwo] = ['abcd', 'abcd'];
 
 function solution(str) {
-  //
+  const newArr = [];
+  [...str].forEach(el => {
+    newArr.push(el);
+  });
+
+  return newArr;
 }
 
 const result = solution(sampleOne);
