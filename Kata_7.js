@@ -5,8 +5,14 @@ const [sampleOne, sampleTwo] = [
 
 const moveZeros = function (arr) {
   const indexOfZero = [];
+
+  arr.forEach((el, i) => {
+    if (el === 0) indexOfZero.push(i);
+  });
+
+  return indexOfZero;
 };
 
 const result = moveZeros(sampleOne);
 
-console.log(sampleOne);
+console.log(result);
