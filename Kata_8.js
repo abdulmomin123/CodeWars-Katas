@@ -9,15 +9,10 @@ const [sampleOne, sampleTwo] = ['abc', 'abcd'];
 
 function solution(str) {
   if (str === '') return [];
+  if (str.length % 2 !== 0) str = `${str}_`;
+
   let newArr = str.split(/(..)/gi);
   newArr = newArr.filter(el => el !== '');
-
-  if ([...newArr[newArr.length - 1]].length > 1) {
-    return newArr;
-  } else {
-    newArr[newArr.length - 1] = newArr[newArr.length - 1] + '_';
-    return newArr;
-  }
 }
 
 const result = solution(sampleOne);
