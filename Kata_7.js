@@ -4,10 +4,7 @@ const [sampleOne, sampleTwo] = [
 ];
 
 const moveZeros = function (arr) {
-  const newArr = arr
-    .sort(a => (a === 0 ? 1 : -1))
-    .sort(a => (a === 0 ? 1 : -1));
-  return newArr;
+  return arr.sort(a => (a === 0 ? 1 : -1)).sort(a => (a === 0 ? 1 : -1));
 };
 
 const result = moveZeros(sampleOne);
