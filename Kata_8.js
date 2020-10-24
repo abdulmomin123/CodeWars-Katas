@@ -8,6 +8,7 @@ Complete the solution so that it splits the string into pairs of two
 const [sampleOne, sampleTwo] = ['abc', 'abcd'];
 
 function solution(str) {
+  if (str === '') return [];
   let newArr = str.split(/(..)/gi);
   newArr = newArr.filter(el => el !== '');
 
