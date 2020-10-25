@@ -8,8 +8,13 @@ const word = 'abba',
 
 function anagrams(word, words) {
   const sortedWord = [...word].sort((a, b) => (a > b ? 1 : -1));
+  const anagrams = words.filter(word => {
+    const wordSorted = [...word].sort((a, b) => (a > b ? 1 : -1));
 
-  return sortedWord;
+    if (wordSorted === sortedWord) return word;
+  });
+
+  return anagrams;
 }
 
 const result = anagrams(word, words);
