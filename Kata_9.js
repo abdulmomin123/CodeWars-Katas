@@ -7,7 +7,9 @@ const word = 'abba',
   words = ['aabb', 'abcd', 'bbaa', 'dada'];
 
 function anagrams(word, words) {
-  //
+  const sortedWord = [...word].sort((a, b) => (a > b ? 1 : -1));
+
+  return sortedWord;
 }
 
 const result = anagrams(word, words);
