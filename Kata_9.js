@@ -8,10 +8,11 @@ const word = 'abba',
 
 function anagrams(word, words) {
   const sortedWord = [...word].sort((a, b) => (a > b ? 1 : -1));
+
   const anagrams = words.filter(word => {
     const wordSorted = [...word].sort((a, b) => (a > b ? 1 : -1));
 
-    if (wordSorted === sortedWord) return word;
+    if (JSON.stringify(sortedWord) === JSON.stringify(wordSorted)) return word;
   });
 
   return anagrams;
