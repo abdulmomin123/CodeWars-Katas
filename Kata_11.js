@@ -20,8 +20,10 @@ function likes(names) {
 
   if (names.length === 3)
     return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+  else
+    return `${names[0]}, ${names[1]} and ${names.length - 2} other like this`;
 }
 
-const result = likes(samples[2]);
+const result = likes(samples[3]);
 
 console.log(result);
