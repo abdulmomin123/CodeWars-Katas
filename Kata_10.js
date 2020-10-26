@@ -10,12 +10,10 @@ function isPrime(num) {
 
   for (i = 2; i < num - 1; i++) {
     if (num % i === 0) result = false;
-    return;
+    return result;
   }
-
-  return result;
 }
 
-const result = isPrime(100);
+const result = isPrime(211);
 
 console.log(result);
