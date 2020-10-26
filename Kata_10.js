@@ -12,12 +12,12 @@ function isPrime(num) {
     if (num % i === 0) {
       result = false;
       return result;
-    } else {
-      return result;
     }
   }
+
+  return result;
 }
 
-const result = isPrime(211);
+const result = isPrime(73);
 
 console.log(result);
