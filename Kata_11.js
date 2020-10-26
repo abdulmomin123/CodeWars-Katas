@@ -16,9 +16,9 @@ function likes(names) {
 
   if (names.length === 1) return `${names[0]} likes this`;
 
-  if (names.length === 2) return 2;
+  if (names.length === 2) return `${names[0]} and ${names[1]} like this`;
 }
 
-const result = likes(samples[0]);
+const result = likes(samples[1]);
 
 console.log(result);
