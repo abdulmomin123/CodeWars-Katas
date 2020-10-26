@@ -12,7 +12,7 @@ const samples = [
 ];
 
 function likes(names) {
-  // TODO
+  if (names.length === 0) return 'no one likes this';
 }
 
 const result = likes(samples[0]);
