@@ -8,7 +8,7 @@ function isPrime(num) {
 
   let result = true;
 
-  for (let i = 2; i < num - 1; i++) {
+  for (let i = 2; i < num; i++) {
     if (num % i === 0) {
       result = false;
       return result;
@@ -18,6 +18,6 @@ function isPrime(num) {
   return result;
 }
 
-const result = isPrime(55);
+const result = isPrime(2);
 
 console.log(result);
