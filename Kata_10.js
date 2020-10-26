@@ -5,8 +5,11 @@ logical value true or false depending on if the integer is a prime.
 
 function isPrime(num) {
   if (num < 2) return false;
+  if (num === 2) return true;
 
-  for (let i = 2; i < num; i++) {
+  const maxDivider = Math.sqrt(num) + 1;
+
+  for (let i = 2; i < maxDivider; i++) {
     if (num % i === 0) {
       return false;
     }
@@ -15,6 +18,6 @@ function isPrime(num) {
   return true;
 }
 
-const result = isPrime(33);
+const result = isPrime(3);
 
 console.log(result);
