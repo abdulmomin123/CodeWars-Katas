@@ -9,11 +9,13 @@ function isPrime(num) {
   let result = true;
 
   for (i = 2; i < num - 1; i++) {
-    if (num % i === 0) result = false;
-    return result;
+    if (num % i === 0) {
+      result = false;
+      return result;
+    }
   }
 }
 
-const result = isPrime(211);
+const result = isPrime(2);
 
 console.log(result);
