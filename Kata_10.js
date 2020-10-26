@@ -6,15 +6,16 @@ logical value true or false depending on if the integer is a prime.
 function isPrime(num) {
   if (num < 2) return false;
 
-  let result = false;
+  let result = true;
 
-  for (i = 2; i < 11; i++) {
-    if (num % i !== 0) result = false;
+  for (i = 2; i < num - 1; i++) {
+    if (num % i === 0) result = false;
+    return;
   }
 
   return result;
 }
 
-const result = isPrime(10);
+const result = isPrime(100);
 
 console.log(result);
